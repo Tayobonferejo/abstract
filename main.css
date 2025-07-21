@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #4C5FD5;
+    --white: #ffffff;
+    --black: #000000;
+    --pink: #dadbf1;
+}
+
+
+body {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}   
+
+header {
+
+    background: var(--black);
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.widthlen {
+    width: 90%;
+    margin: auto;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+nav > div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav > div:first-child > p{
+    border-left: 3px solid var(--white);
+    padding: 0 1rem;
+} 
+
+nav > div:first-child > img{
+    padding-right: 1rem;
+}
+
+
+nav > div:last-child {
+    width: 70%;
+    gap: 3rem;
+
+}
+
+nav > div:last-child input {
+    height: 45px;
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+nav > div:last-child p {
+    border: 2px solid var(--white);
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+nav > div:last-child p:last-child {
+    background-color: var(--blue);
+    border: none;
+}
+
+/* hero section styling */
+
+main > div:first-child {
+    background: var(--pink);
+    color: var(--black);
+    height: 250px;
+}
+
