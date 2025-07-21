@@ -82,6 +82,29 @@ nav > div:last-child p:last-child {
 main > div:first-child {
     background: var(--pink);
     color: var(--black);
-    height: 250px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+main > div:first-child h1 {
+    font-size: 56px
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mainSection > input {
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
 
