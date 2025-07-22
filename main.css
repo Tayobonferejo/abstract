@@ -26,7 +26,7 @@ header {
 }
 
 .widthlen {
-    width: 90%;
+    width: 85%;
     margin: auto;
 
 }
@@ -107,4 +107,50 @@ main > div:first-child h1 {
     padding: 1rem;
 }
 
+.colSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
 
+.colSection img {
+    width: 60px;
+    height: 60px;
+}
+
+.mainContainer {
+    padding: 4rem 0;
+}
+
+.colSection > div {
+    display: flex;
+}
+
+.learnBtn {
+    padding: 1rem 0;
+    color: var(--blue)
+}
+
+
+/* footer styling */
+
+footer {
+    background: var(--black);
+    color: white;
+    padding: 3rem 0;
+}
+
+footer > div > div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > div > div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    padding-bottom: 1.5rem;
+}
