@@ -13,21 +13,22 @@
 
 /* menu bar hidden style */
 
-.menuBar, .openbar {
-    display: none;
-}
 
 body {
     font-family: "Playfair Display", serif;
     font-size: 20px;
 }   
 
-header {
+.desktop {
 
     background: var(--black);
     height: 90px;
     display: flex;
     align-items: center;
+}
+
+.mobile {
+    display: none;
 }
 
 .widthlen {
@@ -159,10 +160,20 @@ footer h2 {
 /* media query screen */
 
 @media only screen and (max-width: 1200px) {
-    .menuBar{
+   .mobile {
+        background: var(--black);
         display: block;
-        font-size: 2rem;
     }
+
+     .mobileNav > nav{
+        display: flex;
+        justify-content;
+        align-items: center;
+    }
+
+    .desktop {
+        display: none;
+}
 
     .menuBar i {
         color: var(--white);

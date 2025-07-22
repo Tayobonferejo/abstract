@@ -8,11 +8,11 @@ menu.addEventListener("click", (event) => {
 
     if(!menu.classList.contains("hamburg")){
         menu.innerHTML = `<i class="fa-solid fa-bars"></i>`
-        openBar.classList.add("openBar");
+        openBar.innerText = 'happy day';
     }
      else {
         menu.innerHTML = `<i class="fa-solid fa-x"></i>`
-        openBar.classList.remove("openBar");
+        openBar.classList.remove("open");
     }
 
 });
