@@ -11,6 +11,11 @@
     --pink: #dadbf1;
 }
 
+/* menu bar hidden style */
+
+.menuBar, .openbar {
+    display: none;
+}
 
 body {
     font-family: "Playfair Display", serif;
@@ -53,27 +58,23 @@ nav > div:first-child > img{
 }
 
 
-nav > div:last-child {
-    width: 70%;
-    gap: 3rem;
-
-}
-
-nav > div:last-child input {
+nav > div:nth-child(2) input {
     height: 45px;
     width: 100%;
     padding: 5px;
     font-size: 18px;
     border-radius: 5px;
 }
-nav > div:last-child p {
+nav > div:nth-child(2) p {
     border: 2px solid var(--white);
-    padding: 5px 20px;
+    padding: 7px 20px;
     border-radius: 5px;
+    margin: 0 0.5rem;
 }
 
-nav > div:last-child p:last-child {
+nav > div:nth-child(2) p:last-child {
     background-color: var(--blue);
+    padding: 9px 20px;
     border: none;
 }
 
@@ -153,4 +154,31 @@ footer > div > div:last-child {
 
 footer h2 {
     padding-bottom: 1.5rem;
+}
+
+/* media query screen */
+
+@media only screen and (max-width: 1200px) {
+    .menuBar{
+        display: block;
+        font-size: 2rem;
+    }
+
+    .menuBar i {
+        color: var(--white);
+    }
+
+    .mainMenu {
+        display: none;
+    }
+
+   /* .menuBar i {
+        transition: transform 0.9s ease;
+    }
+
+    .menuBar .hamburg i {
+         transform: rotate(90deg);
+    } */
+
+
 }
