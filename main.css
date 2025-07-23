@@ -111,7 +111,7 @@ main > div:first-child h1 {
 
 .colSection {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
@@ -145,6 +145,7 @@ footer {
 footer > div > div:first-child {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer > div > div:last-child {
@@ -152,6 +153,7 @@ footer > div > div:last-child {
     justify-content: center;
     align-items: center;
 }
+
 
 footer h2 {
     padding-bottom: 1.5rem;
@@ -166,7 +168,7 @@ footer h2 {
         display: block;
     }
 
-     .mobileNav > nav{
+     .mobileNav > nav{ 
         display: flex;
         align-items: center;
         height: 90px;
@@ -186,3 +188,14 @@ footer h2 {
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+  .colSection {
+        grid-template-columns: 1fr;
+    }
+
+    footer > div > div:first-child {
+        flex-wrap: wrap;
+    }
+ 
+  }
