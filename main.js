@@ -1,5 +1,5 @@
 const menu = document.querySelector(".menuBar > a");
-const openBar = document.querySelector(".openBar");
+const openBar = document.querySelector("#dropDown");
 
 menu.addEventListener("click", (event) => {
     event.preventDefault();
@@ -8,7 +8,7 @@ menu.addEventListener("click", (event) => {
 
     if(!menu.classList.contains("hamburg")){
         menu.innerHTML = `<i class="fa-solid fa-bars"></i>`
-        openBar.innerText = 'happy day';
+        openBar.classList.add("open");
     }
      else {
         menu.innerHTML = `<i class="fa-solid fa-x"></i>`

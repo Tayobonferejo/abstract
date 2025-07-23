@@ -162,34 +162,27 @@ footer h2 {
 @media only screen and (max-width: 1200px) {
    .mobile {
         background: var(--black);
+        color: var(--white);
         display: block;
     }
 
      .mobileNav > nav{
         display: flex;
-        justify-content;
         align-items: center;
+        height: 90px;
     }
 
     .desktop {
         display: none;
-}
+   }
 
     .menuBar i {
         color: var(--white);
+        font-size: 2rem;
     }
-
-    .mainMenu {
-        display: none;
+    
+    .open {
+        display: none
     }
-
-   /* .menuBar i {
-        transition: transform 0.9s ease;
-    }
-
-    .menuBar .hamburg i {
-         transform: rotate(90deg);
-    } */
-
 
 }
