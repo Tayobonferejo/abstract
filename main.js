@@ -3,7 +3,7 @@ const openBar = document.querySelector("#dropDown");
 
 menu.addEventListener("click", (event) => {
     event.preventDefault();
-    
+    // toggling the menu function
     menu.classList.toggle("hamburg");
 
     if(!menu.classList.contains("hamburg")){
