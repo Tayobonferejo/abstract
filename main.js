@@ -16,3 +16,4 @@ menu.addEventListener("click", (event) => {
     }
 
 });
+// end of event listening
